@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(133, 56, 56, 0.9);
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav button {
+    padding: 8px 20px;
+    background-color: #7a2a2a;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #a74242;
+}
+
+
+.conteudo {
+    max-width: 900px;
+    margin: 120px auto 40px; 
+    padding: 0 20px;
+    background-color: rgba(133, 56, 56, 0.1);
+    border-radius: 8px;
+}
+
+.cardapio h1,
+.cardapio h2 {
+    color: #7a2a2a;
+    margin-bottom: 10px;
+}
+
+.cardapio ul {
+    list-style: inside disc;
+    margin-bottom: 20px;
+}
+
+.cardapio ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.imagens-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.imagens-cardapio img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagens-cardapio img:hover {
+    transform: scale(1.05);
+}
+
+.botao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 25px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    z-index: 999;
+}
+    
+.botao:hover {
+    background-color: #8b3b3b;
+}
+
+@media (max-width: 600px) {
+    .imagens-cardapio img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.cardapio {
+     margin: 180px auto 40px;
+}
